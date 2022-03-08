@@ -1,0 +1,236 @@
+.image-area {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: absolute;
+    height: auto;
+    max-width: 760px;
+    top: -225px;
+    left: 170px;
+    z-index:1;
+       
+  }
+  .remove-image {
+  display: none;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-radius: 10em;
+  padding: 2px 6px 3px;
+  text-decoration: none;
+  font: 700 21px/20px sans-serif;
+  background: #555;
+  border: 3px solid #fff;
+  color: #FFF;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+  }
+  .remove-image:hover {
+   background: #E54E4E;
+    padding: 3px 7px 5px;
+    top: -11px;
+  right: -11px;
+  }
+  .remove-image:active {
+   background: #E54E4E;
+   top: -10px;
+   right: -11px;
+  }
+  
+  @media (min-width:320px){
+      .image-area{
+          position: absolute;
+            top: -200px;
+            left: 0px;
+      }
+  }
+  
+  @media (min-width:700px){
+      .image-area{
+          position: absolute;
+            bottom: -200px;
+            left: 0px;
+      }
+  }
+  
+  @media (min-width:780px){
+          .image-area{
+            bottom: -240px;
+            left: 25%;
+          max-width: 700px;
+      }
+  }
+
+  #stage {
+    width: 360px;
+    height: 300px;
+    overflow: hidden;
+    animation-name: alternarCor;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 50000ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  #logo img {
+    position: absolute;
+    width: 360px;
+    left: 8px;
+    top: 80px;
+  }
+  #imagem {
+    opacity: 0;
+    animation-name: deslizar;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 5000ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  #confetes {
+    position: relative;
+    margin-top: -320px;
+  }
+
+  #confete {
+    opacity: 0.7;
+    margin-left: 330px;
+    margin-top: -11px;
+    background: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    animation-name: giraConfete, cair;
+    animation-direction: alternate, alternate;
+    animation-iteration-count: infinite, infinite;
+    animation-duration: 3000ms, 20s;
+    animation-timing-function: ease-in-out, linerar;
+    animation-fill-mode: forwards;
+  }
+
+  #confete:nth-child(3n) {
+    margin-left: 260px;
+  }
+
+  #confete:nth-child(10n + 14) {
+    animation-name: giraConfete2;
+    margin-left: 20px;
+  }
+
+  #confete:nth-child(3n + 20) {
+    margin-left: 300px;
+    animation-name: giraConfete;
+    animation-duration: 1000ms;
+    animation-timing-function: alternate;
+  }
+
+  #confete:nth-child(2n + 3) {
+    background: blue;
+  }
+
+  #confete:nth-child(-3n + 55) {
+    background: green;
+  }
+
+  #confete:nth-child(-4n + 55) {
+    margin-left: 20px;
+  }
+
+  #confete:nth-child(-5n + 55) {
+    margin-left: 220px;
+    animation-name: giraConfete;
+    animation-duration: 1200ms;
+  }
+
+  #confete:nth-child(-6n + 55) {
+    margin-left: 97px;
+    animation-name: giraConfete;
+    animation-duration: 2000ms;
+  }
+
+  #confete:nth-child(-7n + 55) {
+    margin-left: 120px;
+    animation-duration: 1500ms;
+    animation-name: giraConfete2;
+  }
+
+  #confete:nth-child(-8n + 55) {
+    margin-left: 190px;
+  }
+
+  #confete:nth-child(-8n + 30) {
+    margin-left: 35px;
+    margin-top: -15px;
+  }
+
+  #confete:nth-child(-5n + 37) {
+    margin-left: 130px;
+  }
+
+  #confete:nth-child(-12n + 50) {
+    margin-left: 45px;
+  }
+
+  @keyframes giraConfete {
+    from {
+      transform: rotatey(360deg);
+    }
+    to {
+      transform: rotatey(100deg);
+    }
+  }
+
+  @keyframes giraConfete2 {
+    from {
+      transform: rotatex(40deg);
+    }
+    to {
+      transform: rotatex(320deg);
+    }
+  }
+
+  @keyframes cair {
+    from {
+      opacity: 0;
+      margin-top: -10px;
+    }
+    to {
+      opacity: 0.9;
+      margin-top: -3px;
+    }
+  }
+
+  @keyframes deslizar {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+      margin-left: -490px;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes alternarCor {
+    0% {
+      background: #6699ff;
+    }
+    33.33% {
+      background: #6699ff;
+    }
+    66.66% {
+      background: #ffff00;
+    }
+    100% {
+      background: orange;
+    }
+  }
