@@ -38,7 +38,7 @@
     -moz-touch-callout: none;
     -ms-touch-callout: none;
     -o-touch-callout: none;
-    touch-callout: none;
+    -o-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
