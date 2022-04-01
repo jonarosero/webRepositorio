@@ -1,0 +1,161 @@
+<html>
+  <head>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h2 {
+        font-size: 16px;
+        text-align: center;
+      }
+      h3 {
+        font-size: 16px;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .titulo {
+        text-align: center;
+        font-size: 12px;
+        width: 100%;
+      }
+      .imgTitulo {
+        float: right;
+      }
+      .cabecera {
+        text-align: center;
+        width: 100%;
+      }
+      .nombre {
+        text-align: left;
+        padding-right: -50px;
+      }
+      .numero {
+        color: red;
+      }
+      .datos {
+        text-align: center;
+        width: 100%;
+      }
+      .fecha,
+      .area {
+        text-align: left;
+        padding-right: -50px;
+      }
+      .title2 {
+        width: 100%;
+      }
+      .detalle {
+        width: 100%;
+      }
+      .detalleDatos {
+        border: 1px solid black;
+        width: 100%;
+      }
+      .firmas {
+        width: 100%;
+      }
+      .firma {
+        height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table class='titulo'>
+      <th>
+        <img
+          class="imgTitulo"
+          src='http://www.mitaddelmundo.gob.ec/images/banners/img.png'
+          alt=""
+        />
+        <h1>
+          <br /><br />
+          EMPRESA TURÍSTICA DE PICHINCHA MITAD DEL MUNDO-EP <br />JEFATURA
+          ADMINISTRATIVA-UNIDAD DE BIENES
+        </h1>
+      </th>
+    </table>
+    <table class='cabecera'>
+      <th><h2 class="nombre">VERSIÓN 1: NOMBRE DEL PROCESO</h2></th>
+      <th><h2>REVISIÓN DE EXISTENCIAS DE BIENES</h2></th>
+      <th><h2 class="numero">N° 000000</h2></th>
+    </table>
+    <table class="datos">
+      <th><h3>Fecha</h3></th>
+      <th class="fecha"><p>21/03/2022</p></th>
+      <th><h3>Área Requirente</h3></th>
+      <th class="area"><p>Jefatura Comunicación</p></th>
+    </table>
+    <table class="title2">
+      <th><h2>DETALLE DE BIENES</h2></th>
+    </table>
+    <table class="detalle">
+      <thead>
+        <tr>
+          <th>Descripción</th>
+          <th>Cantidad Solicitada</th>
+          <th>Saldo Disponible</th>
+          <th>Cantidad Autorizada</th>
+        </tr>
+      </thead>
+      <tbody class="detalleDatos">
+        <tr>
+          <td class="desc">Compu</td>
+          <td class="cantSol">25</td>
+          <td class="cantDis">21</td>
+          <td class="cantAut">5</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="firmas">
+      <thead>
+        <tr>
+          <th>SOLICITADO POR:</th>
+          <th>REVISADOS SALDOS POR:</th>
+          <th>AUTORIZADO POR:</th>
+        </tr>
+      </thead>
+      <tbody class="firma">
+        <tr>
+          <td class="solicitanteFirm" style='color:white'>Firma 1</td>
+          <td class="revisadoFirm">Firma 2</td>
+          <td class="autorizadoFirm">Firma 3</td>
+        </tr>
+      </tbody>
+      <tr>
+        <td>
+          <h4>Nombre:</h4>
+          <p class="solicitanteNom">Jonathan Rosero</p>
+        </td>
+        <td>
+          <h4>Nombre:</h4>
+          <p class="revisadoNom">Jonathan Rosero</p>
+        </td>
+        <td>
+          <h4>Nombre:</h4>
+          <p class="autorizadoNom">Jonathan Rosero</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>Cargo:</h4>
+          <p class="solicitanteCar">Auxiliar Administrativo</p>
+        </td>
+        <td>
+          <h4>Cargo:</h4>
+          <p class="revisadoCar">Auxiliar Administrativo</p>
+        </td>
+        <td>
+          <h4>Cargo:</h4>
+          <p class="autorizadoCar">Auxiliar Administrativo</p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
